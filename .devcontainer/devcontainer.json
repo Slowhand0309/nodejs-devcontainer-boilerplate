@@ -20,6 +20,9 @@
       }
     }
   },
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
   "postAttachCommand": ".devcontainer/postAttach.sh",
   "remoteUser": "vscode"
 }
