@@ -1,12 +1,10 @@
-version: '3.8'
 volumes:
   modules_data:
 
+name: nodejs_devcontainer # rename this to your project name
 services:
   app:
     build: .
-    image: slowhand/nodejs
-    container_name: "nodejs"
     volumes:
       - ..:/usr/src
       - modules_data:/usr/src/node_modules
