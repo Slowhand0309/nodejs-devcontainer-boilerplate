@@ -9,6 +9,7 @@ RUN set -ex \
     && apt-get update \
     && apt-get install -y \
         sudo \
+        ca-certificates \
         --no-install-recommends \
     # Delete node user with uid=1000 and create vscode user with uid=1000
     && userdel -r node \
