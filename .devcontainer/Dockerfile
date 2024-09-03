@@ -1,4 +1,4 @@
-FROM node:20.10.0-bullseye-slim
+FROM node:22.7.0-bullseye-slim
 LABEL maintainer="Slowhand0309"
 
 ARG username=vscode
