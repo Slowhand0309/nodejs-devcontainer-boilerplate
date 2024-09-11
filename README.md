@@ -2,9 +2,7 @@
 
 ```bash
 $ node --version
-v20.10.0
-$ yarn --version
-1.22.19
+v22.7.0
 $ npm --version
-10.2.3
+10.8.2
 ```
