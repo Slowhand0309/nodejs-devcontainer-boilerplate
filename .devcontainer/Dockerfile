@@ -1,4 +1,4 @@
-FROM node:22.7.0-bullseye-slim
+FROM node:22.15.0-bullseye-slim
 LABEL maintainer="Slowhand0309"
 
 ARG username=vscode
@@ -11,6 +11,8 @@ RUN set -ex \
         sudo \
         ca-certificates \
         --no-install-recommends \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/* \
     # Delete node user with uid=1000 and create vscode user with uid=1000
     && userdel -r node \
     && groupadd --gid ${usergid} ${username} \

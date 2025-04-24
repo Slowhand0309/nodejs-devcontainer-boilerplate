@@ -2,7 +2,7 @@
 
 ```bash
 $ node --version
-v22.7.0
+v22.15.0
 $ npm --version
 10.8.2
 ```
