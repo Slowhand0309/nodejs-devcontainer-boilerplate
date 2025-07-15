@@ -26,5 +26,5 @@
     "ghcr.io/anthropics/devcontainer-features/claude-code:1.0": {}
   },
   "postAttachCommand": ".devcontainer/postAttach.sh",
-  "remoteUser": "vscode"
+  "remoteUser": "node"
 }

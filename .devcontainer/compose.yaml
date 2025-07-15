@@ -1,12 +1,16 @@
 volumes:
   modules_data:
+  claude_config:
 
-name: nodejs_devcontainer # rename this to your project name
+name: nodejs-devcontainer # rename this to your project name
 services:
   app:
     build: .
     volumes:
       - ..:/usr/src
       - modules_data:/usr/src/node_modules
+      - claude_config:/home/node/.claude
+    environment:
+      - CLAUDE_CONFIG_DIR=/home/node/.claude
     command: tail -f /dev/null
     working_dir: /usr/src
