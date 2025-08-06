@@ -1,0 +1,24 @@
+{
+  "restoreTerminals.terminals": [
+    {
+      "splitTerminals": [
+        {
+          "name": "monitor",
+          "commands": [
+            "uvx claude-monitor --timezone Asia/Tokyo"
+          ]
+        }
+      ]
+    },
+    {
+      "splitTerminals": [
+        {
+          "name": "workspace",
+          "commands": [
+            "node --version"
+          ]
+        }
+      ]
+    }
+  ]
+}

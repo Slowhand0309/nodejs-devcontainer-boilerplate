@@ -7,13 +7,15 @@
     "vscode": {
       "extensions": [
         "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode"
+        "esbenp.prettier-vscode",
+        "Anthropic.claude-code",
+        "EthanSK.restore-terminals"
       ],
       "settings": {
         "editor.tabSize": 2,
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": "always"
+          "source.fixAll.eslint": "always"
         },
         "files.insertFinalNewline": true,
         "files.trimFinalNewlines": true
@@ -23,6 +25,7 @@
   "features": {
     "ghcr.io/devcontainers/features/git:1": {},
     "ghcr.io/jungaretti/features/ripgrep:1": {},
+    "ghcr.io/jsburckhardt/devcontainer-features/uv:1": {},
     "ghcr.io/anthropics/devcontainer-features/claude-code:1.0": {}
   },
   "postAttachCommand": ".devcontainer/postAttach.sh",
